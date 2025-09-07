@@ -1,6 +1,11 @@
+
 # Contribution Guidelines
 
 Thank you for your interest in contributing to the Data Structure Lab (KTU) repository!
+
+## Aim
+
+This project aims for complete learning and understanding of data structures. Contributions that help others learn, understand, and master data structures are highly encouraged.
 
 ## How to Contribute
 
@@ -13,6 +18,7 @@ Thank you for your interest in contributing to the Data Structure Lab (KTU) repo
 
 ## What Can You Contribute?
 - New data structure implementations
+- Learning resources (handwritten notes, tutorials, guides, etc.)
 - Improved algorithms
 - Code optimizations
 - Documentation enhancements
