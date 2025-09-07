@@ -1,24 +1,3 @@
-
-Algorithm: Polynomial Addition Using Arrays
-
-Step 1: Start
-
-Step 2: Define Data Structure
-
-Define a struct term containing:
-
-coeff → integer coefficient
-
-exp → integer exponent
-
-
-
-Step 3: Declare Arrays
-
-poly1[10] → stores the first polynomial
-
-poly2[10] → stores the second polynomial
-
 # Aim
 
 	To implement polynomial addition using arrays in C.
