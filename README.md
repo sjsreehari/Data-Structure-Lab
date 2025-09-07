@@ -21,12 +21,7 @@ Please read `CONTRIBUTION.md` for guidelines on how to contribute.
 
 ⭐ **Star this repo if you like it!**
 
-👤 **Follow me:** [LinkedIn - sjsreehari](https://www.linkedin.com/in/sreeharisj/)
+👤 **Let's connect:** [LinkedIn - sjsreehari](https://www.linkedin.com/in/sreeharisj/)
 
-## License
-
-MIT License
-
----
 
 Feel free to use, modify, and share these resources for learning and development.
