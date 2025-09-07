@@ -9,16 +9,17 @@ This repository contains solutions for the Data Structure Lab as per the KTU syl
 - A detailed algorithm in `algorithm.md`
 
 
+
 ## Topics Covered
 
-- [Stack Using Arrays](./Stack_Using_Arrays)
-- [Queue Using Arrays](./Queue_Using_Arrays)
-- [Circular Queue Using Arrays](./Circular_Queue_Using_Arrays)
-- [Deque Using Arrays](./Deque_Using_Arrays)
-- [Infix to Postfix Conversion](./Infix_to_Postfix_Conversion)
-- [Postfix Evaluation](./Postfix_Evaluation)
-- [Polynomial Addition](./Polynomial_Addition)
-- [Sparse Matrix Operations](./Sparse_Matrix_Operations)
+- [Stack Using Arrays](./Stack%20Using%20Arrays)
+- [Queue Using Arrays](./Queue%20Using%20Arrays)
+- [Circular Queue Using Arrays](./Circular%20Queue%20Using%20Arrays)
+- [Deque Using Arrays](./Deque%20Using%20Arrays)
+- [Infix to Postfix Conversion](./Infix%20to%20Postfix%20Conversion)
+- [Postfix Evaluation](./Postfix%20Evaluation)
+- [Polynomial Addition](./Polynomial%20Addition)
+- [Sparse Matrix Operations](./Sparse%20Matrix%20Operations)
 
 ## Structure
 
