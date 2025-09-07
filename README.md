@@ -1,9 +1,21 @@
 # Data Structure Lab (KTU)
 
-This repository contains solutions for the Data Structure Lab as per the KTU syllabus. All programs and algorithms are implemented by Sreehari S J. Each folder contains:
+This repository contains solutions for the Data Structure Lab as per the KTU syllabus. All programs and algorithms are implemented by Sreehari S J and follow he official KTU syllabus. Each folder contains:
 
 - The C program for the respective lab exercise
 - A detailed algorithm in `algorithm.md`
+
+
+## Topics Covered
+
+- [Stack Using Arrays](./Stack_Using_Arrays)
+- [Queue Using Arrays](./Queue_Using_Arrays)
+- [Circular Queue Using Arrays](./Circular_Queue_Using_Arrays)
+- [Deque Using Arrays](./Deque_Using_Arrays)
+- [Infix to Postfix Conversion](./Infix_to_Postfix_Conversion)
+- [Postfix Evaluation](./Postfix_Evaluation)
+- [Polynomial Addition](./Polynomial_Addition)
+- [Sparse Matrix Operations](./Sparse_Matrix_Operations)
 
 ## Structure
 
