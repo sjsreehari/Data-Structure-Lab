@@ -1,5 +1,4 @@
-// Sreehari S J
-// Roll No : 58
+// ...existing code...
 
 
 #include <stdio.h>
