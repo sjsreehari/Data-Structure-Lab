@@ -1,5 +1,8 @@
 # Data Structure Lab (KTU)
 
+[![C](https://img.shields.io/badge/C-Data%20Structures-blue)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![MIT License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
+
 This repository contains solutions for the Data Structure Lab as per the KTU syllabus. All programs and algorithms are implemented by Sreehari S J and follow he official KTU syllabus. Each folder contains:
 
 - The C program for the respective lab exercise
