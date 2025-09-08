@@ -10,6 +10,8 @@
 
 This repository contains solutions and resources for the Data Structure Lab as per the KTU syllabus. All programs and notes are organized for easy learning and reference.
 
+** 🌟 this repo if you like it!**
+
 ## Repository Contents
 
 ### Lab Programs
