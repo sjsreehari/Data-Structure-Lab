@@ -10,16 +10,20 @@ This repository contains solutions for the Data Structure Lab as per the KTU syl
 
 
 
+
+
 ## Topics Covered
 
-- [Stack Using Arrays](./Stack%20Using%20Arrays)
-- [Queue Using Arrays](./Queue%20Using%20Arrays)
-- [Circular Queue Using Arrays](./Circular%20Queue%20Using%20Arrays)
-- [Deque Using Arrays](./Deque%20Using%20Arrays)
-- [Infix to Postfix Conversion](./Infix%20to%20Postfix%20Conversion)
-- [Postfix Evaluation](./Postfix%20Evaluation)
-- [Polynomial Addition](./Polynomial%20Addition)
-- [Sparse Matrix Operations](./Sparse%20Matrix%20Operations)
+- [Stack Using Arrays](./Lab%20Programs/Stack%20Using%20Arrays)
+- [Queue Using Arrays](./Lab%20Programs/Queue%20Using%20Arrays)
+- [Circular Queue Using Arrays](./Lab%20Programs/Circular%20Queue%20Using%20Arrays)
+- [Deque Using Arrays](./Lab%20Programs/Deque%20Using%20Arrays)
+- [Infix to Postfix Conversion](./Lab%20Programs/Infix%20to%20Postfix%20Conversion)
+- [Postfix Evaluation](./Lab%20Programs/Postfix%20Evaluation)
+- [Polynomial Addition](./Lab%20Programs/Polynomial%20Addition)
+- [Polynomial Addition (Linked List)](./Lab%20Programs/Polynomial%20Addition%20%5B%20Linked%20List%20%5D)
+- [Sparse Matrix Operations](./Lab%20Programs/Sparse%20Matrix%20Operations)
+- [Find and Replace (Linked List)](./Lab%20Programs/Find%20and%20Replace%20%5B%20Linked%20List%20%5D)
 
 ## Structure
 
