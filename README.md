@@ -1,4 +1,8 @@
 
+<p align="center">
+	<img src="https://github.com/sjsreehari/Data-Structure-Lab/blob/main/Resources/visuals/ppt/image.png?raw=true" alt="Data Structure Lab Banner"/>
+</p>
+
 # Data Structure Lab (KTU)
 
 [![C](https://img.shields.io/badge/C-Data%20Structures-blue)](https://en.wikipedia.org/wiki/C_(programming_language))
