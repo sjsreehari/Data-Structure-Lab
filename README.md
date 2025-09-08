@@ -61,7 +61,7 @@ This repository contains solutions and resources for the Data Structure Lab as p
 
 This project is open source. Contributions are welcome!
 
-Please read [CONTRIBUTION.md](./CONTRIBUTION.md) for guidelines on how to contribute.
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on how to contribute.
 
 ### Support & Connect
 
