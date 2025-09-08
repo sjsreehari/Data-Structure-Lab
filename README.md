@@ -6,17 +6,9 @@
 
 This repository contains solutions and resources for the Data Structure Lab as per the KTU syllabus. All programs and notes are organized for easy learning and reference.
 
-## Repository Structure
+## Repository Contents
 
-- **Lab Programs/**: C programs and algorithms for each lab exercise
-- **Resources/**: Theory notes, cheatsheets, practice exercises, links, and visuals
-	- **notes/**: Detailed markdown notes (e.g., trees.md, graphs.md, memory_allocation.md)
-	- **cheatsheets/**: Quick reference guides (e.g., pointer_cheatsheet.md, sorting_cheatsheet.md)
-	- **practice/**: Extra exercises, lab assignments, test cases
-	- **links/**: Curated external resources (gfg_links.md, youtube_links.md)
-	- **visuals/**: Flowcharts, mindmaps, presentations
-
-## Lab Programs
+### Lab Programs
 
 - [Stack Using Arrays](./Lab%20Programs/Stack%20Using%20Arrays)
 - [Queue Using Arrays](./Lab%20Programs/Queue%20Using%20Arrays)
@@ -29,7 +21,7 @@ This repository contains solutions and resources for the Data Structure Lab as p
 - [Sparse Matrix Operations](./Lab%20Programs/Sparse%20Matrix%20Operations)
 - [Find and Replace (Linked List)](./Lab%20Programs/Find%20and%20Replace%20%5B%20Linked%20List%20%5D)
 
-## Resources
+### Resources
 
 - **Notes**
 	- [trees.md](./Resources/notes/trees.md)
@@ -51,7 +43,7 @@ This repository contains solutions and resources for the Data Structure Lab as p
 - **Visuals**
 	- Flowcharts, mindmaps, and presentations (see folders in Resources/visuals)
 
-## How to Use
+### How to Use
 
 - Browse Lab Programs for code and algorithms
 - Use Resources for theory, revision, and practice
@@ -59,13 +51,13 @@ This repository contains solutions and resources for the Data Structure Lab as p
 - Practice with exercises and test cases
 - Explore links and visuals for deeper understanding
 
-## Contributing
+### Contributing
 
 This project is open source. Contributions are welcome!
 
 Please read [CONTRIBUTION.md](./CONTRIBUTION.md) for guidelines on how to contribute.
 
-## Support & Connect
+### Support & Connect
 
 **Star this repo if you like it!**
 
