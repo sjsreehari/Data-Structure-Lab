@@ -1,130 +1,122 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <ctype.h>
 
 struct Node {
-    char data;
+    char data[50];
     struct Node *left, *right;
 };
 
 struct Node* stack[100];
 int top = -1;
 
-void push(struct Node* node) {
-    stack[++top] = node;
+void push(struct Node* n) { stack[++top] = n; }
+struct Node* pop() { return stack[top--]; }
+
+struct Node* newNode(char *tok) {
+    struct Node* n = (struct Node*)malloc(sizeof(struct Node));
+    strcpy(n->data, tok);
+    n->left = n->right = NULL;
+    return n;
 }
 
-struct Node* pop() {
-    return stack[top--];
-}
-
-struct Node* createNode(char data) {
-    struct Node* node = (struct Node*)malloc(sizeof(struct Node));
-    node->data = data;
-    node->left = node->right = NULL;
-    return node;
-}
-
-// Build tree from postfix
-struct Node* buildTree(char postfix[]) {
-    top = -1; // reset stack
-    for (int i = 0; postfix[i] != '\0'; i++) {
-        char c = postfix[i];
-        if (isdigit(c)) {  // operand (single digit)
-            push(createNode(c));
-        } else {  // operator
-            struct Node* node = createNode(c);
-            node->right = pop();
-            node->left = pop();
-            push(node);
-        }
-    }
-    return pop(); // root
-}
-
-// Print traversals
-void printInfix(struct Node* root) {
+void inorder(struct Node* root) {
     if (root) {
-        if (root->left && root->right) printf("(");
-        printInfix(root->left);
-        printf("%c", root->data);
-        printInfix(root->right);
-        if (root->left && root->right) printf(")");
+        if (root->left && root->right) printf("( ");
+        inorder(root->left);
+        printf("%s ", root->data);
+        inorder(root->right);
+        if (root->left && root->right) printf(") ");
     }
 }
 
-void printPrefix(struct Node* root) {
+void preorder(struct Node* root) {
     if (root) {
-        printf("%c", root->data);
-        printPrefix(root->left);
-        printPrefix(root->right);
+        printf("%s ", root->data);
+        preorder(root->left);
+        preorder(root->right);
     }
 }
 
-void printPostfix(struct Node* root) {
+void postorder(struct Node* root) {
     if (root) {
-        printPostfix(root->left);
-        printPostfix(root->right);
-        printf("%c", root->data);
+        postorder(root->left);
+        postorder(root->right);
+        printf("%s ", root->data);
     }
 }
 
-void clearTree(struct Node* root) {
-    if (root) {
-        clearTree(root->left);
-        clearTree(root->right);
-        free(root);
+int height(struct Node* root) {
+    if (!root) return 0;
+    int l = height(root->left);
+    int r = height(root->right);
+    return (l > r ? l : r) + 1;
+}
+
+
+// Fill a matrix representing the tree, for pyramid-style printing
+void fillMatrix(struct Node* node, char matrix[][128], int row, int col, int tree_height) {
+    if (!node) return;
+    int len = strlen(node->data);
+    for (int k = 0; k < len; k++)
+        matrix[row][col + k] = node->data[k];
+    int offset = 1 << (tree_height - row - 1); // 2^(tree_height-row-1)
+    if (node->left)
+        fillMatrix(node->left, matrix, row+1, col - offset, tree_height);
+    if (node->right)
+        fillMatrix(node->right, matrix, row+1, col + offset, tree_height);
+}
+
+// Print tree as a pyramid
+void printPyramidTree(struct Node* root) {
+    int h = height(root);
+    int rows = h;
+    int cols = (1 << h) * 2;
+    char matrix[32][128];
+    for (int i = 0; i < rows; i++)
+        for (int j = 0; j < cols; j++)
+            matrix[i][j] = ' ';
+    fillMatrix(root, matrix, 0, cols/2, h);
+    for (int i = 0; i < rows; i++) {
+        int last_char = cols - 1;
+        while (last_char >= 0 && matrix[i][last_char] == ' ') last_char--;
+        for (int j = 0; j <= last_char; j++)
+            putchar(matrix[i][j]);
+        putchar('\n');
     }
 }
 
 int main() {
     struct Node* root = NULL;
-    char postfix[100];
-    int choice;
+    char line[500];
+    printf("Enter postfix expression (space separated):\n");
+    scanf(" %[^\n]", line);
 
-    while (1) {  // infinite loop until exit
-        printf("\n--- Binary Expression Tree ---\n");
-        printf("1. Create tree (enter postfix)\n");
-        printf("2. Print infix expression\n");
-        printf("3. Print prefix expression\n");
-        printf("4. Print postfix expression\n");
-        printf("5. Clear tree\n");
-        printf("6. Exit\n");
-        printf("Enter choice: ");
-        scanf("%d", &choice);
-
-        switch (choice) {
-            case 1:
-                printf("Enter postfix expression (digits & operators): ");
-                scanf("%s", postfix);
-                clearTree(root); // clear old tree before new
-                root = buildTree(postfix);
-                printf("Expression tree created.\n");
-                break;
-            case 2:
-                if (root) { printf("Infix: "); printInfix(root); printf("\n"); }
-                else printf("Tree not created.\n");
-                break;
-            case 3:
-                if (root) { printf("Prefix: "); printPrefix(root); printf("\n"); }
-                else printf("Tree not created.\n");
-                break;
-            case 4:
-                if (root) { printf("Postfix: "); printPostfix(root); printf("\n"); }
-                else printf("Tree not created.\n");
-                break;
-            case 5:
-                if (root) { clearTree(root); root = NULL; printf("Tree cleared.\n"); }
-                else printf("Tree not created.\n");
-                break;
-            case 6:
-                clearTree(root);
-                printf("Exiting...\n");
-                return 0;
-            default:
-                printf("Invalid choice!\n");
+    char* token = strtok(line, " ");
+    while (token) {
+        if (isdigit(token[0]) || isalpha(token[0])) push(newNode(token));
+        else {
+            struct Node* n = newNode(token);
+            n->right = pop();
+            n->left = pop();
+            push(n);
         }
+        token = strtok(NULL, " ");
     }
+
+    root = pop();
+
+    printf("\nExpression Tree (Textbook Pyramid style):\n");
+    printPyramidTree(root);
+
+    printf("\nInfix Expression    : ");
+    inorder(root);
+    printf("\nPrefix Expression   : ");
+    preorder(root);
+    printf("\nPostfix Expression  : ");
+    postorder(root);
+    printf("\n");
 
     return 0;
 }
