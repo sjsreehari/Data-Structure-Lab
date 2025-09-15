@@ -27,6 +27,7 @@ struct Node* createNode(char data) {
 
 // Build tree from postfix
 struct Node* buildTree(char postfix[]) {
+    top = -1; // reset stack
     for (int i = 0; postfix[i] != '\0'; i++) {
         char c = postfix[i];
         if (isdigit(c)) {  // operand (single digit)
@@ -81,7 +82,7 @@ int main() {
     char postfix[100];
     int choice;
 
-    do {
+    while (1) {  // infinite loop until exit
         printf("\n--- Binary Expression Tree ---\n");
         printf("1. Create tree (enter postfix)\n");
         printf("2. Print infix expression\n");
@@ -96,6 +97,7 @@ int main() {
             case 1:
                 printf("Enter postfix expression (digits & operators): ");
                 scanf("%s", postfix);
+                clearTree(root); // clear old tree before new
                 root = buildTree(postfix);
                 printf("Expression tree created.\n");
                 break;
@@ -112,18 +114,17 @@ int main() {
                 else printf("Tree not created.\n");
                 break;
             case 5:
-                clearTree(root);
-                root = NULL;
-                printf("Tree cleared.\n");
+                if (root) { clearTree(root); root = NULL; printf("Tree cleared.\n"); }
+                else printf("Tree not created.\n");
                 break;
             case 6:
                 clearTree(root);
                 printf("Exiting...\n");
-                break;
+                return 0;
             default:
                 printf("Invalid choice!\n");
         }
-    } while (choice != 6);
+    }
 
     return 0;
 }
