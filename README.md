@@ -26,6 +26,12 @@ This repository contains solutions and resources for the Data Structure Lab as p
 - [Polynomial Addition (Linked List)](./Lab%20Programs/Polynomial%20Addition%20%5B%20Linked%20List%20%5D)
 - [Sparse Matrix Operations](./Lab%20Programs/Sparse%20Matrix%20Operations)
 - [Find and Replace (Linked List)](./Lab%20Programs/Find%20and%20Replace%20%5B%20Linked%20List%20%5D)
+- [Binary Search](./Lab%20Programs/Binary%20Search)
+- [Garbage Collector](./Lab%20Programs/Garbage%20Collector)
+- [Heap](./Lab%20Programs/Heap)
+- [Merge Sort](./Lab%20Programs/Merge%20Sort)
+- [Quick Sort](./Lab%20Programs/Quick%20Sort)
+- [Browser Navigation (Webpage)](./Lab%20Programs/Browser%20Navigation%20%28Webpage%29)
 
 ### Resources
 
