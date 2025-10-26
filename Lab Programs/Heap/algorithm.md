@@ -17,3 +17,16 @@ Sort an array using Heap Sort. Build a max-heap then repeatedly extract the maxi
 
 ## Notes
 - In-place, not stable, O(n log n) time.
+
+---
+
+## Complexity
+- Time: O(n log n)
+- Space: O(1) additional
+
+---
+
+## Example
+Input: arr = [4, 10, 3, 5, 1]
+
+After heapSort -> [1, 3, 4, 5, 10]

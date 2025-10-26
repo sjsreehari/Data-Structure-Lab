@@ -23,3 +23,17 @@ Perform binary search on a sorted array and return the position of a given key.
 ## Input/Output
 - Input: number of elements, sorted elements, key
 - Output: position (1-based) if found, otherwise "Element not found"
+
+---
+
+## Notes and Complexity
+- Time complexity: O(log n)
+- Space complexity: O(1)
+- Assumes the input array is sorted. Sort before searching if not.
+
+---
+
+## Example
+Input: n=5, arr = [2,4,6,8,10], key = 6
+
+Output: Element found at position 3
