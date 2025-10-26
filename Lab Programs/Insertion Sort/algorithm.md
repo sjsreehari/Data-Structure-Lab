@@ -22,3 +22,10 @@ Sort an array using Insertion Sort and report the number of steps (shifts + plac
 ## Complexity
 - Worst / Average: O(n^2)
 - Best (already sorted): O(n)
+
+---
+
+## Example
+Input: [12, 11, 13, 5, 6]
+
+Sorted: [5, 6, 11, 12, 13]
