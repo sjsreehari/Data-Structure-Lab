@@ -32,15 +32,10 @@ Construct a binary expression tree from a postfix expression and print its infix
 ### 4. Tree Construction
 - Tokenize input using `strtok`.
 - For each token:
-    - If operand (`isdigit` or `isalpha`):
-        - Call `newNode(token)` to create a node.
         - Call `push(node)` to push onto stack.
     - If operator:
-        - Call `newNode(token)` to create a node.
         - Set `right = pop()`, `left = pop()`.
         - Assign children: `node->left = left`, `node->right = right`.
-        - Call `push(node)`.
-- After all tokens, `root = pop()`.
 
 ### 5. Menu Operations
 - Display menu:
@@ -49,14 +44,13 @@ Construct a binary expression tree from a postfix expression and print its infix
     3. Print infix expression (`inorder(root)`)
     4. Print prefix expression (`preorder(root)`)
     5. Print postfix expression (`postorder(root)`)
-    6. Clear tree (`clear(root)`)
     7. Exit
-
-### 6. Traversal Functions
-- `inorder(root)`: Print left subtree, node data, right subtree, with parentheses for internal nodes.
+3. **Main Function (at end of code)**
+    - The main function is defined at the end of the code file.
+    - Declare `root` as NULL.
+    - Declare `line[500]` for input.
 - `preorder(root)`: Print node data, left subtree, right subtree.
 - `postorder(root)`: Print left subtree, right subtree, node data.
-
 ### 7. Pyramid Printing
 - `height(root)`: Compute tree height.
 - `fillMatrix(node, matrix, row, col, tree_height)`: Fill matrix for visual layout.
@@ -66,21 +60,13 @@ Construct a binary expression tree from a postfix expression and print its infix
 - `clear(root)`: Recursively free all nodes.
 
 ### 9. End
-
----
-
 ## Example
 
-Input: `23 + 45 - *`
-
-Tree Structure:
       *
      / \
-    +   -
    / \ / \
   2  3 4  5
 
-Infix: ((2+3)*(4-5))
 Prefix: *+23-45
 Postfix: 23+45-*
 
