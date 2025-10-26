@@ -8,30 +8,34 @@
 [![C](https://img.shields.io/badge/C-Data%20Structures-blue)](https://en.wikipedia.org/wiki/C_(programming_language))
 [![MIT License](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 
-This repository contains solutions and resources for the Data Structure Lab as per the KTU syllabus. All programs and notes are organized for easy learning and reference.
+This repository contains solutions and learning resources for the Data Structure Lab (KTU). Programs are grouped under `Lab Programs/` and supporting theory, cheatsheets and practice material under `Resources/`.
 
-**🌟 this repo if you like it!**
+If you use these materials in your studies, please give the repository a star and consider contributing improvements.
 
 ## Repository Contents
 
 ### Lab Programs
 
-- [Stack Using Arrays](./Lab%20Programs/Stack%20Using%20Arrays)
-- [Queue Using Arrays](./Lab%20Programs/Queue%20Using%20Arrays)
+- [Binary Expression Tree](./Lab%20Programs/Binary%20Expression%20Tree)
+- [Binary Search](./Lab%20Programs/Binary%20Search)
+- [Bubble Sort](./Lab%20Programs/Bubble%20Sort)
+- [Browser Navigation (Webpage)](./Lab%20Programs/Browser%20Navigation%20%28Webpage%29)
 - [Circular Queue Using Arrays](./Lab%20Programs/Circular%20Queue%20Using%20Arrays)
 - [Deque Using Arrays](./Lab%20Programs/Deque%20Using%20Arrays)
+- [Find and Replace (Linked List)](./Lab%20Programs/Find%20and%20Replace%20%5B%20Linked%20List%20%5D)
+- [Garbage Collector](./Lab%20Programs/Garbage%20Collector)
+- [Heap (Heap Sort)](./Lab%20Programs/Heap)
 - [Infix to Postfix Conversion](./Lab%20Programs/Infix%20to%20Postfix%20Conversion)
-- [Postfix Evaluation](./Lab%20Programs/Postfix%20Evaluation)
+- [Insertion Sort](./Lab%20Programs/Insertion%20Sort)
+- [Merge Sort](./Lab%20Programs/Merge%20Sort)
 - [Polynomial Addition](./Lab%20Programs/Polynomial%20Addition)
 - [Polynomial Addition (Linked List)](./Lab%20Programs/Polynomial%20Addition%20%5B%20Linked%20List%20%5D)
-- [Sparse Matrix Operations](./Lab%20Programs/Sparse%20Matrix%20Operations)
-- [Find and Replace (Linked List)](./Lab%20Programs/Find%20and%20Replace%20%5B%20Linked%20List%20%5D)
-- [Binary Search](./Lab%20Programs/Binary%20Search)
-- [Garbage Collector](./Lab%20Programs/Garbage%20Collector)
-- [Heap](./Lab%20Programs/Heap)
-- [Merge Sort](./Lab%20Programs/Merge%20Sort)
+- [Postfix Evaluation](./Lab%20Programs/Postfix%20Evaluation)
 - [Quick Sort](./Lab%20Programs/Quick%20Sort)
-- [Browser Navigation (Webpage)](./Lab%20Programs/Browser%20Navigation%20%28Webpage%29)
+- [Queue Using Arrays](./Lab%20Programs/Queue%20Using%20Arrays)
+- [Selection Sort](./Lab%20Programs/Selection%20Sort)
+- [Sparse Matrix Operations](./Lab%20Programs/Sparse%20Matrix%20Operations)
+- [Stack Using Arrays](./Lab%20Programs/Stack%20Using%20Arrays)
 
 ### Resources
 
@@ -57,22 +61,25 @@ This repository contains solutions and resources for the Data Structure Lab as p
 
 ### How to Use
 
-- Browse Lab Programs for code and algorithms
-- Use Resources for theory, revision, and practice
-- Check cheatsheets for quick reminders
-- Practice with exercises and test cases
-- Explore links and visuals for deeper understanding
+- Browse a program folder under `Lab Programs/` for source code and `algorithm.md`.
+- Compile a program using GCC (PowerShell example):
+
+```powershell
+gcc "Lab Programs/Bubble Sort/bubbleSort.c" -o bubbleSort.exe
+.
+\bubbleSort.exe
+```
+
+- Most programs are single-file C programs; replace the path and filename above as needed.
 
 ### Contributing
 
-This project is open source. Contributions are welcome!
+Contributions are welcome: add programs, improve notes, or fix typos. See [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines.
 
-Please read [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on how to contribute.
+### License
 
-### Support & Connect
+This repository is provided under the MIT License. See `LICENSE`.
 
-**Star this repo if you like it!**
-
-**Let's connect:** [LinkedIn](https://www.linkedin.com/in/sreeharisj/)
+---
 
 Feel free to use, modify, and share these resources for learning and development.
