@@ -18,3 +18,10 @@ Sort an array using Selection Sort and report the number of steps (comparisons +
 
 ## Complexity
 - Worst / Average / Best: O(n^2)
+
+---
+
+## Example
+Input: [64, 25, 12, 22, 11]
+
+Sorted: [11, 12, 22, 25, 64]
