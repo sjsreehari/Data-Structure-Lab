@@ -16,3 +16,10 @@ Sort an array using Merge Sort (Divide and Conquer).
 ## Complexity
 - Time: O(n log n)
 - Space: O(n) additional for merging
+
+---
+
+## Example
+Input: arr = [5,2,9,1,5,6]
+
+Sorted: [1,2,5,5,6,9]

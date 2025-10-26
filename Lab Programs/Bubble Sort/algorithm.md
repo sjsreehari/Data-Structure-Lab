@@ -24,3 +24,16 @@ Sort an array using Bubble Sort and report the number of steps (comparisons + sw
 
 ## Notes
 - This program counts a "step" for each comparison and for each swap.
+
+---
+
+## Complexity
+- Worst / Average: O(n^2)
+- Best (already sorted): O(n)
+
+---
+
+## Example
+Input: [5,1,4,2,8]
+
+Sorted: [1,2,4,5,8]

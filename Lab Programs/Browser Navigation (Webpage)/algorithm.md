@@ -19,3 +19,14 @@ Implement backward and forward navigation for visited webpages using a doubly li
 ## Notes
 - Uses dynamic allocation for each visited page node.
 - Removing forward history frees memory for nodes beyond the current page.
+
+---
+
+## Complexity
+- Each visit (when truncating forward history) is O(k) where k is number of nodes removed.
+- goBack/goForward are O(1).
+
+---
+
+## Example
+Sequence: Visit A -> Visit B -> Visit C -> Go Back -> Current = B -> Visit D (forward history after B removed)
